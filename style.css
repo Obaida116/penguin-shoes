@@ -1,0 +1,5 @@
+.img-adjust{
+    height: 300px;
+    object-fit: contain;
+    object-position: center center;
+}
