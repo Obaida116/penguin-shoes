@@ -9,19 +9,23 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/697cbe9357.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="container bg-light">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <header style="height: 750px;" class="bg-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-header mb-5">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="w-25" src="images/Logo, Icon/Logo.png" alt=""></a>
+        <a class="navbar-brand" href="#"><img class="w-50" src="images/Logo, Icon/Logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav d-flex justify-content-end">
+        <div class="collapse navbar-collapse  offset-3" id="navbarNavAltMarkup">
+          <div style="font-size: small; color: #3c3c3c; font-weight: 700;" class="navbar-nav mr-auto navbar-right">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             <a class="nav-link" href="#">Product</a>
             <a class="nav-link" href="#">About Us</a>
@@ -34,15 +38,17 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="col-sm-6">
-            <img class="w-50" src="images/Photos/Group 33092.png" alt="">
+          <div class="col-sm-12 col-lg-6">
+            <img class="w-75" src="images/Photos/Group 33092.png" alt="">
           </div>
-          <div class="col-sm-6">
-            <h1>NIKE REACT</h1>
-            <h1>INFINITY RUN-2</h1>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. It is simply dummy in text and typing industtry
+          <div class="col-sm-12 col-lg-6">
+            <h1 style="color: #fa824c; font-size: 60px;" class="banner-heading">NIKE REACT</h1>
+            <h1 style="font-size: 60px;" class="banner-heading">INFINITY RUN-2</h1>
+            <P class="para-font w-50">Lorem ipsum dolor sit amet consectetur. It is simply dummy in text and typing
+              industtry
             </P>
-            <button class="rounded"><i class="fas fa-shopping-cart"></i>BUY NOW</button>
+            <button class="bg-primary bg-gradient button-design"><i class="fas fa-shopping-cart"></i>&nbsp;BUY
+              NOW</button>
           </div>
         </div>
       </div>
@@ -50,64 +56,67 @@
   </header>
   <main>
     <!-- Casual Shoe Card Section Starts Here -->
-    <section class="container mt-5">
-      <h1>CASUAL SHOES</h1>
+    <section class="container mt-5 ">
+      <h1 class="banner-heading">CASUAL SHOES</h1>
       <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img class="img-thumbnail rounded m-3 bg-light img-adjust" src="images/Photos/image 5.png"
-              class="card-img-top" alt="...">
+        <div class="col-sm-6">
+          <div class="card h-100 penguin-card shadow">
+            <img style="border-radius: 7px;" class=" m-3 bg-light penguin-card img-adjust"
+              src="images/Photos/image 5.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Nike Shoe</h5>
+              <h5 class="card-title card-name">Nike Shoe</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
-            <div class="card-footer">
-                <div class="row d-flex align-items-center">
-                  <div class="col-sm">
-                    <h2>$234</h2>
-                  </div>
-                  <div class="col-sm ">
-                    <button class="rounded"><i class="fas fa-shopping-cart"></i>BUY NOW</button>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 rounded">
-            <img class="img-thumbnail rounded m-3 bg-light img-adjust" src="images/Photos/Daco_1703273 1.png"
-              class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Sneakers Skate Shoe</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-            <div class="card-footer">
+            <div class="card-footer penguin-card-footer penguin-card-footer penguin-card-footer">
               <div class="row d-flex align-items-center">
-                  <div class="col-sm">
-                    <h2>$234</h2>
-                  </div>
-                  <div class="col-sm ">
-                    <button class="rounded"><i class="fas fa-shopping-cart"></i>BUY NOW</button>
-                  </div>
+                <div class="col">
+                  <h2 class="price">$234</h2>
                 </div>
+                <div class="col">
+                  <button class="button-design bg-primary bg-gradient"><i class="fas fa-shopping-cart"></i>BUY
+                    NOW</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img class="img-thumbnail rounded m-3 bg-light img-adjust" src="images/Photos/pngegg 1.png"
-              class="card-img-top" alt="...">
+        <div class="col-sm-6">
+          <div class="card h-100 penguin-card shadow">
+            <img style="border-radius: 7px;" class=" rounded m-3 bg-light img-adjust"
+              src="images/Photos/Daco_1703273 1.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Sneakers Basketball Shoe</h5>
+              <h5 class="card-title card-name">Sneakers Skate Shoe</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="card-footer penguin-card-footer">
+              <div class="row d-flex align-items-center">
+                <div class="col">
+                  <h2 class="price">$234</h2>
+                </div>
+                <div class="col">
+                  <button class="bg-primary bg-gradient button-design"><i class="fas fa-shopping-cart"></i>BUY
+                    NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card h-100 penguin-card shadow">
+            <img class=" rounded m-3 bg-light img-adjust" src="images/Photos/pngegg 1.png" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title card-name">Sneakers Basketball Shoe</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer penguin-card-footer">
               <div class="row d-flex align-items-center">
-                <div class="col-sm">
-                  <h2>$234</h2>
+                <div class="col">
+                  <h2 class="price">$234</h2>
                 </div>
-                <div class="col-sm ">
-                  <button class="rounded "><i class="fas fa-shopping-cart"></i>BUY NOW</button>
+                <div class="col ">
+                  <button class="bg-primary bg-gradient button-design "><i class="fas fa-shopping-cart"></i>BUY
+                    NOW</button>
                 </div>
               </div>
             </div>
@@ -117,64 +126,67 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
     </section>
     <!-- Formal Shoe Card Section Starts Here -->
-    <section class="container mt-5">
-      <h1>CASUAL SHOES</h1>
+    <section class="container mt-5 mb-5">
+      <h1 class="banner-heading">FORMAL SHOES</h1>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
-          <div class="card h-100">
-            <img class="img-thumbnail rounded m-3 bg-light img-adjust" src="images/Photos/Mask Group.png"
-              class="card-img-top" alt="...">
+          <div class="card h-100 penguin-card shadow">
+            <img class="rounded m-3 bg-light img-adjust" src="images/Photos/Mask Group-bg.png" class="card-img-top"
+              alt="...">
             <div class="card-body">
-              <h5 class="card-title">Prestige High-cut Leather</h5>
+              <h5 class="card-title card-name">Prestige High-cut Leather</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
-            <div class="card-footer">
-                <div class="row d-flex align-items-center">
-                  <div class="col-sm">
-                    <h2>$234</h2>
-                  </div>
-                  <div class="col-sm ">
-                    <button class="rounded"><i class="fas fa-shopping-cart"></i>BUY NOW</button>
-                  </div>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 rounded">
-            <img class="img-thumbnail rounded m-3 bg-light img-adjust" src="images/Photos/Rectangle 38.png"
-              class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Slip-on Formal Shoe</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-            <div class="card-footer">
+            <div class="card-footer penguin-card-footer">
               <div class="row d-flex align-items-center">
-                  <div class="col-sm">
-                    <h2>$234</h2>
-                  </div>
-                  <div class="col-sm ">
-                    <button class="rounded"><i class="fas fa-shopping-cart"></i>BUY NOW</button>
-                  </div>
+                <div class="col">
+                  <h2 class="price">$234</h2>
                 </div>
+                <div class="col ">
+                  <button class="bg-primary bg-gradient button-design"><i class="fas fa-shopping-cart"></i>&nbsp;BUY
+                    NOW</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
-            <img class="img-thumbnail rounded m-3 bg-light img-adjust" src="images/Photos/Rectangle 39.png"
-              class="card-img-top" alt="...">
+          <div class="card h-100 penguin-card shadow">
+            <img class="rounded m-3 bg-light img-adjust" src="images/Photos/Rectangle-bf 38.png" class="card-img-top"
+              alt="...">
             <div class="card-body">
-              <h5 class="card-title">Slip-on Formal Shoe</h5>
+              <h5 class="card-title card-name">Slip-on Formal Shoe</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="card-footer penguin-card-footer">
+              <div class="row d-flex align-items-center col-sm-6">
+                <div class="col">
+                  <h2 class="price" class="price">$234</h2>
+                </div>
+                <div class="col ">
+                  <button class="bg-primary bg-gradient button-design"><i class="fas fa-shopping-cart"></i>BUY
+                    NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 penguin-card shadow">
+            <img class="rounded m-3 bg-light img-adjust" src="images/Photos/Rectangle-bg 39.png" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <h5 class="card-title card-name">Slip-on Formal Shoe</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-            <div class="card-footer">
+            <div class="card-footer penguin-card-footer">
               <div class="row d-flex align-items-center">
-                <div class="col-sm">
-                  <h2>$234</h2>
+                <div class="col">
+                  <h2 class="price">$234</h2>
                 </div>
-                <div class="col-sm ">
-                  <button class="rounded "><i class="fas fa-shopping-cart"></i>BUY NOW</button>
+                <div class="col ">
+                  <button class="bg-primary bg-gradient button-design "><i class="fas fa-shopping-cart"></i>BUY
+                    NOW</button>
                 </div>
               </div>
             </div>
@@ -186,21 +198,70 @@
     <!-- Card Section Ends Here -->
     <!-- Support Section Starts Here -->
     <section class="container mt-5">
-        <div class="row">
-          <div class="w-100">
-              <img class="w-50" src="images/Logo, Icon/XMLID 1.png" alt="">
+      <div class="row p-1">
+        <div class="col-sm-12 col-lg-6">
+          <div class="row">
+            <div class="col-sm-12 m-2 rounded shadow">
+              <!-- Topic-1 Gutter Starts Here -->
+              <div class="container overflow-hidden">
+                <div class="row gx-1 bg-white">
+                  <div class="col-sm-3">
+                    <div class="p-3 bg-white"><img class="w-75" src="images/Logo, Icon/image 12.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="p-3 bg-white">
+                      <h3>Find The Perfect Fit</h3>
+                      <p>Everybody different. That's why we offer styles for each</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Topic-1 Gutter Ends Here -->
+            <div class="col-sm-12 m-2 rounded shadow">
+              <!-- Topic-2 Gutter Starts Here -->
+              <div class="container overflow-hidden">
+                <div class="row gx-1 bg-white">
+                  <div class="col-sm-3">
+                    <div class="p-3 bg-white"><img class="w-75" src="images/Logo, Icon/image 13.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="p-3 bg-white">
+                      <h3>Free Exchange</h3>
+                      <p>One of the many reasons you can shop with peace of mind</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Topic-2 Gutter Ends Here -->
           </div>
-          <div class="col-sm-4">
-
+          <div class="col-sm-12 m-3 rounded shadow">
+            <!-- Topic-3 Gutter Starts Here -->
+            <div class="container overflow-hidden">
+              <div class="row gx-1 bg-white">
+                <div class="col-sm-3">
+                  <div class="p-3 bg-white"><img class="w-75" src="images/Logo, Icon/image 14.png" alt="">
+                  </div>
+                </div>
+                <div class="col-sm-9">
+                  <div class="p-3 bg-white">
+                    <h3>Contact Of Our Seller</h3>
+                    <p>Everybody different. That's why we offer styles for each</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-4">
-
-          </div>
-          <div class="col-sm-4">
-
-          </div>
+          <!-- Topic-3 Gutter Ends Here -->
         </div>
-
+        <div class="col-sm-12 col-lg-6 w-50 ps-5">
+          <img class="w-75 img-support-adjust" src="images/Logo, Icon/XMLID 1.png" alt="">
+        </div>
+      </div>
+      
     </section>
   </main>
 
