@@ -46,3 +46,11 @@
     object-fit: contain;
     object-position: center center;
 }
+.footer-bg {
+    background: linear-gradient(180deg, rgb(21, 73, 49), rgb(31, 128, 103));
+}
+.anchor-styling {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 400;
+}
