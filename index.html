@@ -16,34 +16,52 @@
 </head>
 
 <body>
-  <header style="height: 750px;" class="bg-header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-header mb-5">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="w-50" src="images/Logo, Icon/Logo.png" alt=""></a>
+  <header class="bg-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-light bg-header">
+        <a class="navbar-brand" href="#"><img src="images/Logo, Icon/Logo.png" alt="Logo" width="200px" height="auto"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse  offset-3" id="navbarNavAltMarkup">
-          <div style="font-size: small; color: #3c3c3c; font-weight: 700;" class="navbar-nav mr-auto navbar-right">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#shoes">Product</a>
-            <a class="nav-link" href="#about">About Us</a>
-            <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact Us</a>
-          </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-3">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu bg-header" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#casual-shoes">Casual Shoes</a></li>
+                <li><a class="dropdown-item" href="#formal-shoes">Formal Shoes</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
     <!-- Banner Section Starts Here -->
     <section>
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-lg-6">
-            <img class="w-75" src="images/Photos/Group 33092.png" alt="">
+        <div class="row pb-5">
+          <div class="col-sm-12 col-lg-7 order-2 order-md-1 ">
+            <img src="images/Photos/Group 33092.png" alt="" width="75%">
           </div>
-          <div class="col-sm-12 col-lg-6">
-            <h1 style="color: #fa824c; font-size: 60px;" class="banner-heading">NIKE REACT</h1>
-            <h1 style="font-size: 60px;" class="banner-heading">INFINITY RUN-2</h1>
+          <div class="col-sm-12 col-lg-5 order-1 order-md-2">
+            <div class="title mt-3 pt-5">
+              <h1 style="color: #fa824c; font-size: 60px;">NIKE REACT</h1>
+              <h1 style="font-size: 60px;">INFINITY RUN-2</h1>
+            </div>
             <P class="para-font w-50">Lorem ipsum dolor sit amet consectetur. It is simply dummy in text and typing
               industtry
             </P>
@@ -57,9 +75,9 @@
   <main>
     <!-- Casual Shoe Card Section Starts Here -->
     <section class="container mt-5 ">
-      <h1 class="banner-heading" id="shoes">CASUAL SHOES</h1>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col-sm-6">
+      <h1 class="banner-heading" id="casual-shoes">CASUAL SHOES</h1>
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
           <div class="card h-100 penguin-card shadow">
             <img style="border-radius: 7px;" class=" m-3 bg-light penguin-card img-adjust"
               src="images/Photos/image 5.png" class="card-img-top" alt="...">
@@ -80,7 +98,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-12 col-md-4">
           <div class="card h-100 penguin-card shadow">
             <img style="border-radius: 7px;" class=" rounded m-3 bg-light img-adjust"
               src="images/Photos/Daco_1703273 1.png" class="card-img-top" alt="...">
@@ -101,7 +119,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-12 col-md-4">
           <div class="card h-100 penguin-card shadow">
             <img class=" rounded m-3 bg-light img-adjust" src="images/Photos/pngegg 1.png" class="card-img-top"
               alt="...">
@@ -127,7 +145,7 @@
     </section>
     <!-- Formal Shoe Card Section Starts Here -->
     <section class="container mt-5 mb-5">
-      <h1 class="banner-heading">FORMAL SHOES</h1>
+      <h1 class="banner-heading" id="formal-shoe">FORMAL SHOES</h1>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100 penguin-card shadow">
@@ -159,7 +177,7 @@
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
             <div class="card-footer penguin-card-footer">
-              <div class="row d-flex align-items-center col-sm-6">
+              <div class="row d-flex align-items-center">
                 <div class="col">
                   <h2 class="price" class="price">$234</h2>
                 </div>
@@ -199,12 +217,11 @@
     <!-- Support Section Starts Here -->
     <section class="container mt-5">
       <div class="row p-1">
-        <div class="col-sm-12 col-lg-6">
-          <div class="row">
+        <div class="col-sm-12 col-md-6 order-2 order-md-1 d-flex flex-column justify-content-center">
+          <!-- Topic-1 Gutter Starts Here -->
             <div class="col-sm-12 m-2 rounded shadow">
-              <!-- Topic-1 Gutter Starts Here -->
               <div class="container overflow-hidden">
-                <div class="row gx-1 bg-white">
+                <div class="row gx-1 bg-white text-center">
                   <div class="col-sm-3">
                     <div class="p-3 bg-white"><img class="w-75" src="images/Logo, Icon/image 12.png" alt="">
                     </div>
@@ -219,10 +236,10 @@
               </div>
             </div>
             <!-- Topic-1 Gutter Ends Here -->
+            <!-- Topic-2 Gutter Starts Here -->
             <div class="col-sm-12 m-2 rounded shadow">
-              <!-- Topic-2 Gutter Starts Here -->
-              <div class="container overflow-hidden">
-                <div class="row gx-1 bg-white">
+               <div class="container overflow-hidden">
+                <div class="row gx-1 bg-white text-center">
                   <div class="col-sm-3">
                     <div class="p-3 bg-white"><img class="w-75" src="images/Logo, Icon/image 13.png" alt="">
                     </div>
@@ -237,11 +254,10 @@
               </div>
             </div>
             <!-- Topic-2 Gutter Ends Here -->
-          </div>
-          <div class="col-sm-12 m-3 rounded shadow">
-            <!-- Topic-3 Gutter Starts Here -->
+           <!-- Topic-3 Gutter Starts Here -->
+          <div class="col-sm-12 m-2 rounded shadow">
             <div class="container overflow-hidden">
-              <div class="row gx-1 bg-white">
+              <div class="row gx-1 bg-white text-center">
                 <div class="col-sm-3">
                   <div class="p-3 bg-white"><img class="w-75" src="images/Logo, Icon/image 14.png" alt="">
                   </div>
@@ -249,7 +265,7 @@
                 <div class="col-sm-9">
                   <div class="p-3 bg-white">
                     <h3>Contact Our Seller</h3>
-                    <p>They are here to help you. That's quite literally what we pay them for</p>
+                    <p>They are here to help you. That's quite literally what we pay them for.</p>
                   </div>
                 </div>
               </div>
@@ -257,8 +273,8 @@
           </div>
           <!-- Topic-3 Gutter Ends Here -->
         </div>
-        <div class="col-sm-12 col-lg-6 w-50 ps-5">
-          <img class="w-75 img-support-adjust" src="images/Logo, Icon/XMLID 1.png" alt="">
+        <div class="col-sm-12 col-md-6 ps-5 order-1 order-md-2">
+          <img class="w-100 img-support-adjust" src="images/Logo, Icon/XMLID 1.png" alt="">
         </div>
       </div>
       <!-- support immage Ends Here -->
